@@ -1,0 +1,41 @@
+name: python_3.9_pytorch_yolo
+# channels:
+#   - javascript
+#   - nodefaults
+dependencies:
+  - python==3.9
+  - pip
+  - pip:
+    - numpy>=1.18.5
+    - awscli
+    - boto3
+    - ipympl
+    - jupyter
+    # - torch torchvision torchaudio
+    - torch #>=1.9.0+cu111
+    - torchvision #==0.10.0+cu111
+    - opencv-python
+    - matplotlib>=3.2.2
+    - pandas
+    - Pillow>=7.1.2
+    - PyYAML>=5.3.1
+    - requests>=2.23.0
+    - scipy>=1.4.1 
+    - tqdm>=4.64.0
+    - seaborn>=0.11.0
+    - wandb
+    - tensorboard>=2.4.1
+    - ipython
+    - psutil
+    - thop>=0.1.1
+    - tensorflow>=2.4.1
+    - scikit-learn<=1.1.2
+    - albumentations>=1.0.3
+  - conda
+  - conda:
+    # - pytorch
+    # - torchvision
+    # - pytorch-cuda=11.7 -c
+    # - pytorch -c nvidia
+    - ipykernel
+    - ipywidgets
